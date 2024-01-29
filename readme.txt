@@ -8,5 +8,7 @@ Espere que la aplicació complisca amb els requeriments de l'activitat avaluable
 
 Tant el codi com la documentació estarà disponible tant en el github com en la entrega de florida oberta. :)
 
-Video en yt: https://youtu.be/qyjucZsIlfE
+PD: en la entrega està adjuntat el pom.xml, la versio de java utilitzada es la '20.0.2'
+
+Video en yt: https://youtu.be/zvrz_ApoqyU
 Repor en github:  https://github.com/AlfonsoGallardoFlorida/PSP_AEV03
