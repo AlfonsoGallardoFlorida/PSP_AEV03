@@ -1,0 +1,66 @@
+PETICIONS POST
+	
+	-CREACIO D'USUARIS
+		· Creació de nou usuari en blanc
+		· Creació de nou usuari quan ./autoritzats/autoritzats.txt no existeix
+		· Creació de nou usuari quan ./autoritzats.txt no existeix
+		· Creació de nou usuari (user1)
+		· Creació de nou usuari en el mateix nom (user1)
+		· Creació de nou usuari (user2)
+
+	- CREACIÓ DE PELIS
+		· Creació de pelicula en blanc
+		· Creació de pelicula quan ./pelis no existeix
+		· Creació de pelicula en un usuari no autoritzat
+		· Creació de pelicula (peli1)
+		· Creació de pelicula en el mateix nom (peli1)
+		· Creació de pelicula (peli2)
+	
+	- CREACIÓ DE RESSENYES
+		· Creació de ressenya en blanc
+		· Creació de ressenya en un usuari no autoritzat
+		· Creació de ressenya en un id de pelicula que no existeix
+		· Creació de ressenya per a la peli1 en user1
+		· Creació de ressenya per a la peli1 en user2
+		· Tornar a crear ressenya per a la peli1 en user1
+		· Tornar a crear ressenya per a la peli1 en user2
+
+PETICIONS GET
+	
+	· Get all
+	· Get peli per id
+
+	· Get buit
+	· Get all quan no hi han pelicules
+	· Get all quan no existeix el directori ./pelis
+	· Get peli per id en un id erroni
+
+----------------------------------------------------------------------------------
+Proves realitzades
+
+	- Creació d'usuari
+
+		http://localhost:8080/APIpelis/nouUsuari
+
+		{
+    			"usuari":"user1"
+		}
+	
+	-Creació de pelicula
+
+		http://localhost:8080/APIpelis/novaPeli
+		
+		{
+			 "usuari": "user1",
+			 "titol": "peli1"
+		}
+	
+	-Creació de nova ressenya
+
+		http://localhost:8080/APIpelis/novaRessenya
+
+		{
+  			"usuari": "user1",
+  			"id": "1",
+  			"ressenya": "nova ressenya de user1 en peli1"
+		}
